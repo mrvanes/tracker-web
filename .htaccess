@@ -1,0 +1,4 @@
+RewriteEngine On
+RedirectMatch 301 ^/$ /home
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/$1 [QSA]

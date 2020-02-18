@@ -1,0 +1,28 @@
+<?php
+$conf['db']['user'] = 'tracker';
+$conf['db']['password'] = '******';
+$conf['db']['server'] = 'localhost';
+$conf['db']['schema'] = 'tracker';
+$conf['db']['purge'] = 7; // days retention
+
+$all_pages['/home'] = array(
+  'title' => "Home",
+  'rights' => 0,
+);
+$all_pages['/manage'] = array(
+  'title' => "Uitlenen",
+  'rights' => 0,
+);
+$all_pages['/admin'] = array(
+  'title' => "Admin",
+  'rights' => 1,
+);
+$all_pages['/test'] = array(
+  'title' => "Debug",
+  'rights' => 1,
+);
+
+$salt = "secret_salt";
+$debug = false;
+
+?>
